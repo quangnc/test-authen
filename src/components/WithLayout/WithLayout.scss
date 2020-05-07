@@ -1,0 +1,74 @@
+.full-page {
+  width: 100%;
+  height: 100vh;
+  .app-sidebar {
+    background-color: #efd690;
+    height: 100%;
+    padding: 10px;
+    .sidebar-box {
+      position: relative;
+      top: 40%;
+      transform: translateY(-50%);
+      small {
+        display: flex;
+        justify-content: center;
+        font-weight: 600;
+        font-style: italic;
+      }
+    }
+    img {
+      width: 150px;
+      height: 150px;
+      position: relative;
+      left: 50%;
+      transform: translateX(-50%);
+      border-radius: 50%;
+      object-fit: cover;
+    }
+    &__title {
+      margin-top: 50px;
+      display: flex;
+      flex-direction: column;
+      padding: 0px 20px;
+      h4 {
+        font-size: 35px;
+        font-family: cursive;
+        font-weight: bold;
+      }
+      .title-eat-tasty {
+        margin-bottom: 0px;
+        padding-left: 15%;
+      }
+      .title-everyday {
+        text-align: right;
+        color: rgba(191, 43, 43, 0.9);
+        padding-right: 15%;
+      }
+    }
+  }
+  .app-body {
+    overflow: hidden;
+    header {
+      box-shadow: 0px 0px 7px -2px #333;
+      .header-box {
+        padding: 15px 20px;
+        &-right {
+          display: flex;
+          justify-content: flex-end;
+        }
+      }
+    }
+    .app-footer {
+      box-shadow: 0px 0px 7px -2px #333;
+      .footer-box {
+        width: 100%;
+        padding: 15px 20px;
+        text-align: center;
+      }
+    }
+  }
+  .main {
+    padding: 10px 20px;
+    height: calc(100% - 104px);
+  }
+}
